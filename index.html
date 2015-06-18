@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="fontra">
+	<head>
+		<title>Fontra</title>
+
+		<!-- css -->
+		<link rel="stylesheet" href="/bower_components/angular-material/angular-material.css"/>
+		<link rel="stylesheet" href="/bower_components/material-design-color-palette/css/material-design-color-palette.min.css"/>
+		<link rel="stylesheet" href="/bower_components/material-design-iconic-font/css/material-design-iconic-font.min.css"/>
+
+		<link rel="stylesheet" href="/fontra.app.css"/>
+	</head>
+
+	<body layout="column" class="mdc-bg-blue-grey-200">
+		<md-toolbar layout="row" class="mdc-bg-light-blue-700 fixed">
+			<div class="md-toolbar-tools">
+				<!-- <md-button class="md-icon-button" aria-label="Settings">
+					<i class="md md-menu"></i>
+				</md-button> -->
+				
+				<h3>
+					fontra
+				</h3>
+
+				<md-input-container flex ng-show="showSearch">
+					<label>Search</label>
+					<input ng-model="search">
+				</md-input-container>
+
+				<span flex ng-show="!showSearch"></span>
+
+				<md-button class="md-icon-button" aria-label="More" ng-click="!showSearch">
+					<i class="md md-search"></i>
+				</md-button>
+
+				<md-button class="md-icon-button" aria-label="More">
+					<i class="md md-more-vert"></i>
+				</md-button>
+			</div> <!-- end .md-toolbar-tools -->
+		</md-toolbar>
+
+		<ui-view>
+			<!-- content -->
+		</ui-view>
+
+		<!-- js -->
+		<script src="/bower_components/angular/angular.js"></script>
+		<script src="/bower_components/angular-resource/angular-resource.js"></script>
+		<Script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="/bower_components/angular-animate/angular-animate.js"></script>
+		<script src="/bower_components/angular-aria/angular-aria.js"></script>
+		<script src="/bower_components/angular-material/angular-material.js"></script>
+
+		<script src="/fontra.app.js"></script>
+		<script src="/views/gallery/gallery.js"></script>
+	</body>
+</html>

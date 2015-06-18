@@ -1,0 +1,41 @@
+html,
+body {
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.md-toolbar-tools h3 {
+	font-size: inherit;
+	font-weight: inherit;
+	margin: inherit;
+	margin-right: 20px;
+	margin-left: 26px;
+	font-weight: 400;
+	font-size: 1.47em;
+}
+
+.md {
+	line-height: initial;
+}
+
+/*[class*=" md-"],
+[class^=md-] {
+	display: inline-flex;
+}*/
+
+.md-fab i {
+	margin: auto;
+	font-size: 24px;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.margin-top {
+	margin-top: 50px;
+}

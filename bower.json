@@ -1,0 +1,26 @@
+{
+  "name": "fontra",
+  "version": "0.0.1",
+  "description": "Google Web Fonts app built with AngularJS & Material Design",
+  "main": "index.html",
+  "authors": [
+    "Zachariah Moreno"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zachmoreno/fontra",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.1",
+    "angular-resource": "~1.4.1",
+    "angular-material": "~0.10.0",
+    "angular-ui-router": "~0.2.15",
+    "material-design-color-palette": "~1.0.1",
+    "material-design-iconic-font": "~1.1.1"
+  }
+}
