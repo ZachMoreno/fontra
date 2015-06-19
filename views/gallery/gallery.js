@@ -6,7 +6,7 @@ angular.module('fontra.gallery', [])
 
 		$stateProvider.state('gallery', {
 			url: '/gallery',
-			templateUrl: '/views/gallery/gallery.html',
+			templateUrl: 'views/gallery/gallery.html',
 			controller: 'galleryController'
 		});
 
