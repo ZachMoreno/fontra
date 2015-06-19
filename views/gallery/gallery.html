@@ -1,18 +1,20 @@
 <link rel="stylesheet" ng-repeat="typeface in typefaces" href="http://fonts.googleapis.com/css?family={{typeface.family}}"/>
-<!-- <link href='Roboto+Slab' rel='stylesheet' type='text/css'> -->
 
-<md-content class="md-padding mdc-bg-blue-grey-200 margin-top">
+<md-content class="md-padding mdc-bg-blue-grey-100 margin-top">
   <md-list>
     <md-list-item class="md-2-line" ng-repeat="typeface in typefaces">
-      <md-card layout class="full-width">
+      <md-card class="full-width">
         <md-card-content>
           <div class="md-list-item-text">
-            <h1 style="font-family: '{{ typeface.family }}'">{{ typeface.family | filter:search }}</h1>
-            <p>
-              <span ng-repeat="variant in typeface.variants track by $index">
-                {{ variant }}
-              </span>
-            </p>
+            <div layout="row">
+              <h1 style="font-family: '{{typeface.family}}'">{{ typeface.family | filter:search }}</h1>
+            </div>
+
+            <div layout="row">
+              <md-button ng-repeat="variant in typeface.variants track by $index" layout="column" flex>
+                <p class="center-text">{{ variant }}</p>
+              </md-button>
+            </div>
           </div> <!-- end .md-list-item-text -->
         </md-card-content>
       </md-card>

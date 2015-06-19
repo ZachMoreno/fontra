@@ -1,0 +1,22 @@
+{
+  "name": "fontra",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ZachMoreno/fontra.git"
+  },
+  "author": "Zachariah Moreno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZachMoreno/fontra/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "~3.9.0"
+  }
+}

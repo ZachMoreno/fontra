@@ -20,7 +20,6 @@
     "angular-resource": "~1.4.1",
     "angular-material": "~0.10.0",
     "angular-ui-router": "~0.2.15",
-    "material-design-color-palette": "~1.0.1",
-    "material-design-iconic-font": "~1.1.1"
+    "material-design-color-palette": "~1.0.1"
   }
 }

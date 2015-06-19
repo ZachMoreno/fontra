@@ -6,35 +6,31 @@
 		<!-- css -->
 		<link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
 		<link rel="stylesheet" href="bower_components/material-design-color-palette/css/material-design-color-palette.min.css"/>
-		<link rel="stylesheet" href="bower_components/material-design-iconic-font/css/material-design-iconic-font.min.css"/>
+		
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
 		<link rel="stylesheet" href="fontra.app.css"/>
 	</head>
 
-	<body layout="column" class="mdc-bg-blue-grey-200">
-		<md-toolbar layout="row" class="mdc-bg-light-blue-700 fixed">
+	<body layout="column" class="mdc-bg-blue-grey-100">
+		<md-toolbar layout="row" class="mdc-bg-green-A200 fixed">
 			<div class="md-toolbar-tools">
 				<!-- <md-button class="md-icon-button" aria-label="Settings">
 					<i class="md md-menu"></i>
 				</md-button> -->
 				
-				<h3>
+				<h3 class="mdc-text-blue-grey-800">
 					fontra
 				</h3>
 
-				<md-input-container flex ng-show="showSearch">
-					<label>Search</label>
+				<md-input-container flex>
+					<label><i class="material-icons">search</i> Search</label>
 					<input ng-model="search">
 				</md-input-container>
 
-				<span flex ng-show="!showSearch"></span>
-
-				<md-button class="md-icon-button" aria-label="More" ng-click="!showSearch">
-					<i class="md md-search"></i>
-				</md-button>
-
 				<md-button class="md-icon-button" aria-label="More">
-					<i class="md md-more-vert"></i>
+					<i class="material-icons mdc-text-blue-grey-700" flex="10">shopping_cart</i>
 				</md-button>
 			</div> <!-- end .md-toolbar-tools -->
 		</md-toolbar>

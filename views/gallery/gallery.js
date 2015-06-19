@@ -40,4 +40,9 @@ angular.module('fontra.gallery', [])
 	});
 
 	$scope.showSearch = false;
+
+	$scope.toggleSearch = function toggleSearch() {
+		!$scope.showSearch;
+		console.log($scope.showSearch);
+	}
 }]);
